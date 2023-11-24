@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Muse Development</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./uikit/css/uikit.min.css" />
+    <script src="./uikit/js/uikit.min.js"></script>
+    <script src="./uikit/js/uikit-icons.min.js"></script>
+
+    <link href="/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/uikit_overrides.css" type="text/css">
+  </head>
+
+  <body>
+  
+    <!-- HEADER ==========================================================================-->
+    <header id="header" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+      <div class="uk-padding-small uk-padding-remove-vertical uk-navbar uk-navbar-container uk-navbar-transparent">
+        
+        <div class="logo uk-navbar-left">
+          <a>Muse Development</a>
+        </div>
+
+        <nav class="uk-navbar uk-navbar-right">
+          <ul class="uk-navbar-nav uk-visible@m">
+            <li class="uk-active"><a href="#">Home</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+
+          <div class="uk-hidden@m">
+            <button class="uk-button uk-padding-small uk-padding-remove-horizontal uk-button-link" type="button">
+              <a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span></a>
+            </button>
+            <div uk-dropdown="animation: slide-top; animate-out: true; duration: 700">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active"><a href="#">Home</a></li>
+                  <li><a href="#mission">Mission</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#location">Location</a></li>
+                  <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+          </div>
+
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- MAIN ============================================================================-->
+    <main>
+      <!-- MISSION =======================================================================-->
+      <div id="mission" class="uk-inline">
+        <div class="uk-section uk-section-secondary uk-position-center uk-text-center">
+          <div class="uk-padding uk-padding-remove-vertical">
+            <h1 class="uk-text-bold">Our Mission</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper eros elit, id efficitur diam consequat eu.</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- SERVICES ======================================================================-->
+      <div id="services" class="uk-container uk-container-large uk-margin-auto uk-padding">
+        
+        <h2 class="uk-text-bold uk-text-primary">Our Services</h2>
+
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+          
+          <div>
+            <div class="uk-card uk-card-secondary uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./images/services/kelly-sikkema-v9FQR4tbIq8-unsplash.jpg" alt="Website wireframe">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title uk-text-center">Website Design</h3>
+                <p class="uk-text-justify">Sed semper eros elit, id efficitur diam consequat eu. Vestibulum ante ipsum 
+                  primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque varius, 
+                  quam ornare blandit rutrum, augue urna dignissim tellus, at congue neque nisl non augue.</p>
+                  <a>Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-secondary uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./images/services/amador-loureiro-BVyNlchWqzs-unsplash.jpg" alt="Printing press letters">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title uk-text-center">Print Design</h3>
+                <p class="uk-text-justify">Morbi ut efficitur elit, ac iaculis felis. In ornare, dui porta aliquet accumsan, 
+                  ex turpis faucibus dui, a venenatis tortor dolor quis mi. Curabitur auctor consectetur 
+                  neque vitae luctus. Morbi sagittis erat sit amet laoreet sagittis.</p>
+                  <a>Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-secondary uk-card-hover">
+              <div class="uk-card-media-top">
+                <img src="./images/services/jo-szczepanska-5aiRb5f464A-unsplash.jpg" alt="Project timeline">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title uk-text-center">Project Management</h3>
+                <p class="uk-text-justify">Proin consectetur ultricies orci 
+                  sed semper. Sed suscipit elit nec tempus cursus. Morbi id hendrerit odio. Quisque at urna diam. 
+                  Aenean pellentesque sapien fringilla ipsum dictum, ut eleifend ante accumsan.</p>
+                  <a>Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCCATION =====================================================================-->
+      <div id="location" class="uk-container uk-container-large uk-margin-auto uk-padding">
+        <h2 class="uk-text-bold uk-text-primary">Our Location</h2>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; max-height: 700">
+
+          <ul class="uk-slideshow-items">
+              <li>
+                  <img src="./images/location/austin-distel-wD1LRb9OeEo-unsplash.jpg" alt="" uk-cover>
+              </li>
+              <li>
+                  <img src="./images/location/michael-pointner-kOdl-epUGUE-unsplash.jpg" alt="" uk-cover>
+              </li>
+              <li>
+                  <img src="./images/location/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg" alt="" uk-cover>
+              </li>
+              <li>
+                <img src="./images/location/uneebo-office-design-6182SnH84II-unsplash.jpg" alt="" uk-cover>
+            </li>
+          </ul>
+      
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+      
+        </div>
+      </div>
+
+
+      <!-- TEAM ==========================================================================-->
+      <div id="team">
+        <div class="uk-container uk-container-large uk-margin-auto uk-padding">
+          <h2 class="uk-text-bold uk-text-primary">Our Team</h2>
+
+          <div class="uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2 uk-grid-small uk-grid-match" uk-grid>
+            
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class=" uk-margin-remove-bottom">Violet Rose</h3>
+                    <p class="uk-margin-remove">CEO</p>
+                  </div>
+                  <img class="one" src="./images/team/amin-moshrefi-6cds0idrqbk-unsplash.jpg" alt="Website wireframe">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Lucy Hale</h3>
+                    <p class="uk-margin-remove">CFO</p>
+                  </div>
+                  <img class="two" src="./images/team/chandri-anggara-57qlhgZ59F4-unsplash.jpg" alt="Printing press letters">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Russell James</h3>
+                    <p class="uk-margin-remove">CTO</p>
+                  </div>
+                  <img class="three" src="./images/team/kagou-dicko-b760Z_pA8AI-unsplash.jpg" alt="Project timeline">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Kelly Jones</h3>
+                    <p class="uk-margin-remove">COO</p>
+                  </div>
+                  <img class="four" src="./images/team/lance-reis-tyec1pFjaGU-unsplash.jpg" alt="Project timeline">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Sally Thompson</h3>
+                    <p class="uk-margin-remove">Lead Designer</p>
+                  </div>
+                  <img class="five" src="./images/team/mahdi-chaghari-Xve3fQpMPgU-unsplash.jpg" alt="Project timeline">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Jack Sparrow</h3>
+                    <p class="uk-margin-remove">Lead Developer</p>
+                  </div>
+                  <img class="six" src="./images/team/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="Project timeline">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Decker Cain</h3>
+                    <p class="uk-margin-remove">Project Manager</p>
+                  </div>
+                  <img class="seven" src="./images/team/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="Project timeline">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-secondary uk-card-hover">
+                <div class="uk-card-media-top uk-inline">
+                  <div class="uk-position-bottom uk-padding-small">
+                    <h3 class="uk-margin-remove-bottom">Lisa Simpson</h3>
+                    <p class="uk-margin-remove">Brand Manager</p>
+                  </div>
+                  <img class="eight" src="./images/team/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Project timeline">
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER ==========================================================================-->
+    <footer>
+      <div class="uk-padding uk-container uk-container-large uk-margin-auto">
+
+      </div>
+    </footer>
+
+  </body>
+</html>
